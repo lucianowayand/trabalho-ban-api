@@ -11,9 +11,9 @@ datasource db {
 }
 
 model Clientes {
-  cpf      BigInt    @id
+  cpf      String    @id
   nome     String
-  telefone BigInt
+  telefone String
   animais  Animais[]
 }
 
@@ -24,5 +24,5 @@ model Animais {
   tipo      String
   dataNasc  DateTime
   Clientes  Clientes @relation(fields: [cpfDono], references: [cpf])
-  cpfDono   BigInt
+  cpfDono   String
 }
