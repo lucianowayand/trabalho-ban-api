@@ -1,5 +1,5 @@
 # Trabalho de Ban
-Trabalho baseado no esquema já desenvolvido em aula
+Trabalho baseado no esquema já desenvolvido em aula, seu arquivo raiz é o `index.js`
 
 ![diagrama do banco de dados](https://github.com/lucianowayand/trabalho-ban-api/blob/main/DiagramaBancoPetShop.png)
 
