@@ -1,27 +1,17 @@
-version: '3'
-
+version: "3"
 services:
-  teste-postgres-compose:
-    image: postgres
-    environment:
-      POSTGRES_PASSWORD: "Postgres2019!"
+  postgres:
+    image: postgres:latest
+    container_name: postgresBAN
+    hostname: postgres
     ports:
-      - "15432:5432"
-    networks:
-      - postgres-compose-network
-      
-  teste-pgadmin-compose:
-    image: dpage/pgadmin4
+      - 5432:5432
     environment:
-      PGADMIN_DEFAULT_EMAIL: "email@email.com"
-      PGADMIN_DEFAULT_PASSWORD: "123"
-    ports:
-      - "16543:80"
-    depends_on:
-      - teste-postgres-compose
-    networks:
-      - postgres-compose-network
-
-networks: 
-  postgres-compose-network:
-    driver: bridge
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: strongpassword
+      POSTGRES_DB: trabalho-ban
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+volumes:
+  postgres-data:
