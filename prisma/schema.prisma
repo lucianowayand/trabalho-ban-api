@@ -25,4 +25,5 @@ model Animais {
   dataNasc  DateTime
   Clientes  Clientes @relation(fields: [cpfDono], references: [cpf])
   cpfDono   String
+
 }
