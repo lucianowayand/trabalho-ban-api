@@ -1,6 +1,6 @@
 # Trabalho de Ban
 Trabalho baseado no esquema já desenvolvido em aula
-[diagrama do banco de dados](https://github.com/lucianowayand/trabalho-ban-api/blob/main/DiagramaBancoPetShop.png)
+![diagrama do banco de dados](https://github.com/lucianowayand/trabalho-ban-api/blob/main/DiagramaBancoPetShop.png)
 
 ## Dependências
 O projeto é feito em Node.js e PostgreSQL. Para facilitar a montagem do projeto utilizamos o Postgres dockerizado portanto sua instalação é recomendada, caso não seja utilizado o endereço do banco de dados deve ser alterado no arquivo `.env`.
