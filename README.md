@@ -18,13 +18,13 @@ Com o banco de dados funcionando corretamente execute o servidor express atravé
 Como requisitado pelo trabalho implementamos apenas as tabelas Cliente e Animais, é possivel acessar as buscas definidas no exercicio através de:
 
 - Uma opção para inserir novas tuplas da primeira tabela
-  `POST : /clientes`
+  * `POST : /clientes`
 - Uma opção para inserir novas tuplas da segunda tabela
-  `POST : /animais`
+  * `POST : /animais`
 - Uma opção para listar todas as tuplas da primeira tabela
-  `GET : /clientes`
+  * `GET : /clientes`
 - Uma opção para listar todas as tuplas da segunda tabela
-  `GET : /animais`
+  * `GET : /animais`
 - Uma opção para listar o resultado de uma consulta que envolva uma junção entre as duas tabelas
 
 - Uma opção para listar o resultado de uma consulta que envolva subconsulta(s) e uma ou mais funções de agregação.
