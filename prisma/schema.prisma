@@ -11,19 +11,19 @@ datasource db {
 }
 
 model Clientes {
-  cpf         String    @id
-  nomeCliente String
-  telefone    String
-  animais     Animais[]
+  cpf      String    @id
+  nome     String
+  telefone String
+  animais  Animais[]
 }
 
 model Animais {
-  idAnimais  Int      @id @default(autoincrement())
-  nomeAnimal String
-  tamanho    String
-  tipo       String
-  dataNasc   DateTime
-  Clientes   Clientes @relation(fields: [cpfDono], references: [cpf])
-  cpfDono    String
+  idAnimais Int      @id @default(autoincrement())
+  nome      String
+  tamanho   String
+  tipo      String
+  dataNasc  DateTime
+  Clientes  Clientes @relation(fields: [cpfDono], references: [cpf])
+  cpfDono   String
 
 }

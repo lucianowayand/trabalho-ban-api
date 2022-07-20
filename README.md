@@ -26,5 +26,6 @@ Como requisitado pelo trabalho implementamos apenas as tabelas Cliente e Animais
 - Uma opção para listar todas as tuplas da segunda tabela
   * `GET : /animais`
 - Uma opção para listar o resultado de uma consulta que envolva uma junção entre as duas tabelas
-
+  * `GET : /clientes/animais`
 - Uma opção para listar o resultado de uma consulta que envolva subconsulta(s) e uma ou mais funções de agregação.
+  * `GET : /animais/tipo/:tipo`

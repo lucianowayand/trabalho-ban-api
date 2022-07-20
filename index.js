@@ -1,10 +1,10 @@
 import express from 'express'
 import bodyParser from 'body-parser'
+
 import { PrismaClient, Prisma } from '@prisma/client'
 
 const prisma = new PrismaClient()
 const app = express()
-
 app.use(bodyParser.json())
 
 app.get('/clientes', async (req, res) => {
@@ -86,8 +86,5 @@ app.get('/animais/tipo/:tipo', async (req, res) => {
     }
 
 })
-
-
-
 
 const server = app.listen(3000)
