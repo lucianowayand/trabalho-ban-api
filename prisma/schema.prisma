@@ -9,3 +9,20 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Clientes {
+  cpf      BigInt    @id
+  nome     String
+  telefone BigInt
+  animais  Animais[]
+}
+
+model Animais {
+  idAnimais   Int       @id @default(autoincrement())
+  nome        String
+  tamanho     String
+  tipo        String
+  dataNasc    DateTime
+  Clientes    Clientes @relation(fields: [clientesCpf], references: [cpf])
+  clientesCpf BigInt
+}
